@@ -3,19 +3,18 @@
         "id": "lcml",
         "title": "Роспись храмов",
         "details": {
-            "description": "A single page web application for managing research and administrative content for LCML at the University of British Columbia",
-            "summary": "Web Application"
+            "description": "Нарисовала руки ноги хвост",
+            "summary": "Красивый храм"
         },
         "date": "April 2022",
         "roles": [
-            "UI/UX Designer",
-            "Full-Stack Web Developer"
+            ""
         ],
         "links": [
             {
-                "type": "web",
-                "text": "Visit Site",
-                "link": "https://lcml.engineering.ok.ubc.ca"
+                "type": "",
+                "text": "",
+                "link": ""
             }
         ]
     },
