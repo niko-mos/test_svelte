@@ -5,99 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d372b37-6c3d-4d62-a2b6-7d250d1c40b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/routes/+layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/.nojekyll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/firebase-hosting-merge.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/firebase-hosting-pull-request.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/musabhassan.com.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/ambient.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/client-optimized/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/client-optimized/matchers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/client-optimized/nodes/0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/client-optimized/nodes/1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/client-optimized/nodes/2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/client/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/client/matchers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/client/nodes/0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/client/nodes/1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/client/nodes/2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/root.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/server/internal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/non-ambient.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/.vite/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/_app/immutable/assets/2.yJk1BE01.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/_app/immutable/assets/_page.yJk1BE01.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/_app/immutable/chunks/entry.Z3Qiri1Z.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/_app/immutable/chunks/index.8NwuiTUI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/_app/immutable/chunks/index.t7KkFELy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/_app/immutable/chunks/scheduler.GOssmixh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/_app/immutable/entry/app.r-9UUgDp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/_app/immutable/entry/start.piS8j_hJ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/_app/immutable/nodes/0.5wDYu5KG.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/_app/immutable/nodes/1.p0PeGWgw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/_app/immutable/nodes/2.g28fSw4e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/_app/version.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/.home-back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/footer-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/home-back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/profile-photo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/scroll_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/signature-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/svg-icons/android.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/svg-icons/firebase.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/svg-icons/flutter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/svg-icons/gcp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/svg-icons/iOS.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/svg-icons/nodejs.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/svg-icons/php.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/svg-icons/react.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/svg-icons/svelte.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work-back/grillzzy/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work-back/iconopis/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work-back/kic/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work-back/kwa/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work-back/lcml/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work-back/slickscroll/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work-back/v1/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work/0W7A9478.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work/1.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work/IMG_4282.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work/IMG_5853.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work/IMG_7088.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/assets/imgs/work/SIXA0483.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/data/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/data/work-data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/client/sitemap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/.vite/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/_app/immutable/assets/_page.yJk1BE01.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/chunks/exports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/chunks/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/chunks/internal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/chunks/ssr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/entries/fallbacks/error.svelte.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/entries/fallbacks/layout.svelte.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/entries/pages/_page.svelte.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/entries/pages/_page.ts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/internal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/manifest-full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/manifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/nodes/0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/nodes/1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/output/server/nodes/2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/types/route_meta_data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.svelte-kit/types/src/routes/$types.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715335369532</updated>
-      <workItem from="1715335371900" duration="745000" />
+      <workItem from="1715335371900" duration="1005000" />
     </task>
     <servers />
   </component>
