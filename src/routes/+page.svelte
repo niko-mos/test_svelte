@@ -1,5 +1,9 @@
+<script>
+	import { base } from "$app/paths";
+</script>
+
 <script lang="ts">
-	
+
 import slickScroll from "slickscrolljs";
 import { onMount } from "svelte";
 import { imgPromises, loaderAnimationPromise, loadPageResolve, slickScrollInstance, workItemsFetch, siteDataFetch } from "$lib/store";
