@@ -1,7 +1,7 @@
 {
-	"name": "musabhassan.com",
+	"name": "evgeniyarodina",
 	"author": {
-		"name": "Musab Hassan"
+		"name": "Evgeniya Rodina"
 	},
 	"version": "2.2.0",
 	"private": true,
@@ -31,6 +31,7 @@
 		"animejs": "^3.2.1",
 		"bezier-easing": "^2.1.0",
 		"detect-gpu": "^4.0.7",
+		"gh-pages": "^6.1.1",
 		"slickscrolljs": "^2.0.2",
 		"three": "^0.136.0"
 	},

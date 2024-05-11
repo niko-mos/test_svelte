@@ -85,25 +85,21 @@
         <div class="status-wrapper">
                 {#if siteData.availablity_date === ""}
                     <p class="large-text" bind:this={statusElement}>
-                        i am currently accepting freelance work, <br>you may reach me on my email.
+                        Принимаю заказы на роспись, написание икон и прочие работы.
+<!--                        , <br>.-->
                     </p>
                 {:else}
                     <p class="large-text" bind:this={statusElement}>
-                        i am available for freelance work after <br> {siteData.availablity_date}.
+                        Принимаю заказы на роспись, написание икон и прочие работы с <br> {siteData.availablity_date}.
                     </p>
                 {/if}
-            <a class="button large-text" bind:this={fullEmailLinkElement} href="mailto:musabhassan04@gmail.com" target="_blank">musabhassan04@gmail.com</a>
+            <a class="button large-text" bind:this={fullEmailLinkElement} href="mailto:zhenya2201art@gmail.com" target="_blank">zhenya2201art@gmail.com</a>
         </div>
         
         <div class="credits-wrapper" bind:this={creditsElement}>
             <p class="year">© {currentYear}</p>
             <p class="credits">
-                designed and developed by Musab Hassan<br>
-                
-                <!-- Support the project by keeping this line in your fork -->
-                <a class="clickable button no-decor" href="https://github.com/Musab-Hassan/musabhassan.com" target="_blank">
-                    this website is open source on github
-                </a>
+                Adapted from Musab Hassans`s work<br>
             </p>
         </div>
     </div>

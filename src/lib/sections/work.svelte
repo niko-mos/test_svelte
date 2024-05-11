@@ -32,7 +32,7 @@
 	const inViewPromise: Promise<boolean> = new Promise((resolve) => {
 		inViewResolve = resolve;
 	});
-
+	const imageFiles: string[] = ["1.jpg", "2.jpg", "3.jpg"];
 
 	// Slider calculations and rendering
 	class WorkSlider {
@@ -235,9 +235,16 @@
 							</h6>
 						</div>
 					</div>
-					
+
+					<div class="image-grid">
+						{#each imageFiles as image}
+							<img src={`data/${image}`} alt="Image" class="grid-image" />
+						{/each}
+					</div>
+
+
 					<div class="mid-align">
-						<h1 class="title" 
+						<h1 class="title"
 							use:titleSlide
 							out:letterSlideOut
 							class:breakTitleWords
@@ -246,47 +253,49 @@
 
 							{data[currentActive].title}
 						</h1>
+
+
+
 						<button class="close-button-wrapper interactive" on:click={() => toggleActiveItem(currentActive)}>
-							<div 
+							<div
 								class ="close-button"
-								in:maskSlideIn={{ reverse: true }} 
+								in:maskSlideIn={{ reverse: true }}
 								out:maskSlideOut>
 
 								&times;
 							</div>
 						</button>
 					</div>
-					
-					<div class="bottom-align">
-						<div>
-							<div in:maskSlideIn={{ reverse: true }} out:maskSlideOut>
-								<p class="paragraph">
-									{data[currentActive].details.description}
-								</p>
-							</div>
-						</div>
-						<div class="roles">
-							<div class="wrapper">
-								<div in:maskSlideIn={{reverse: true}} out:maskSlideOut>
-									<p class="descriptor">Role</p>
-								</div>
-								<ul in:maskSlideIn={{ reverse: true, delay: 100 }} out:maskSlideOut>
-									{#each data[currentActive].roles as role}
-										<li>{"+ " + role}</li>
-									{/each}
-								</ul>
-							</div>
-						</div>
-						<div in:maskSlideIn={{ reverse: true }} out:maskSlideOut>
-							<div class="links">
-								{#each data[currentActive].links as link}
-									<a href={link.link} target="_blank" class="button">{link.text}</a>
-								{/each}
-							</div>
-						</div>
+
+<!--					<div class="bottom-align">-->
+<!--						<div>-->
+<!--							<div in:maskSlideIn={{ reverse: true }} out:maskSlideOut>-->
+<!--								<p class="paragraph">-->
+<!--									{data[currentActive].details.description}-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="roles">-->
+<!--							<div class="wrapper">-->
+<!--								<div in:maskSlideIn={{reverse: true}} out:maskSlideOut>-->
+<!--									<p class="descriptor">Role</p>-->
+<!--								</div>-->
+<!--								<ul in:maskSlideIn={{ reverse: true, delay: 100 }} out:maskSlideOut>-->
+<!--									{#each data[currentActive].roles as role}-->
+<!--										<li>{"+ " + role}</li>-->
+<!--									{/each}-->
+<!--								</ul>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div in:maskSlideIn={{ reverse: true }} out:maskSlideOut>-->
+<!--							<div class="links">-->
+<!--								{#each data[currentActive].links as link}-->
+<!--									<a href={link.link} target="_blank" class="button">{link.text}</a>-->
+<!--								{/each}-->
+<!--							</div>-->
+<!--						</div>-->
 					</div>
 				</div>
-			</div>
 		{/if}
 	</div>
 </div>
@@ -323,6 +332,17 @@
 		-moz-user-select: none
 		-ms-user-select: none
 		user-select: none
+
+	.image-grid
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+		grid-gap: 10px
+		max-width: 100%
+		overflow: auto
+
+		.grid-image
+			max-width: 100%
+			height: auto
 
 	.details-container
 		position: absolute

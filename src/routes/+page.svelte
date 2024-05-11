@@ -1,9 +1,5 @@
-<script>
-	import { base } from "$app/paths";
-</script>
-
 <script lang="ts">
-
+	
 import slickScroll from "slickscrolljs";
 import { onMount } from "svelte";
 import { imgPromises, loaderAnimationPromise, loadPageResolve, slickScrollInstance, workItemsFetch, siteDataFetch } from "$lib/store";
@@ -85,7 +81,7 @@ onMount(async () => {
 	z-index: -1
 	
 :global(body)
-	background-color: #999999
+	background-color: #333333
 	overflow: hidden
 	color: white
 	margin: 0

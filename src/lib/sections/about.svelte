@@ -48,20 +48,20 @@
 	{#await sectionOnePromise then _}
 		<div class="content-wrapper">
 			<h1 class="title" use:titleIn>
-				Hey I'm <br>Musab
+				Привет! <br> Меня зовут Евгения
 			</h1>
 			<div in:maskSlideIn={{ duration: 1200, reverse: true, delay: 150 }}>
 				<p class="paragraph">
-					I'm a web developer from British Columbia, Canada. I specialize in designing and developing web experiences<br><br>I work with organizations and individuals to create beautiful, responsive, and scalable web products tailor-made for them. Think we can make something great together? Let's talk over email.
+					Я специалист в области иконописи.
 				</p>
 			</div>
 			<div class="social-button-wrapper">
-				<div in:maskSlideIn={{ delay: 400, reverse: true }}>
-					<span class="button"><a href="mailto:musabhassan04@gmail.com" target="_blank" class="clickable sublink link">Email Me</a></span>
-				</div>
-				<div in:maskSlideIn={{ delay: 700, reverse: true }}>
-					<span class="button"><a href="https://github.com/Musab-Hassan" target="_blank" class="clickable sublink link">Github</a></span>
-				</div>
+<!--				<div in:maskSlideIn={{ delay: 400, reverse: true }}>-->
+<!--					<span class="button"><a href="mailto:musabhassan04@gmail.com" target="_blank" class="clickable sublink link">Email Me</a></span>-->
+<!--				</div>-->
+<!--				<div in:maskSlideIn={{ delay: 700, reverse: true }}>-->
+<!--					<span class="button"><a href="https://github.com/Musab-Hassan" target="_blank" class="clickable sublink link">Github</a></span>-->
+<!--				</div>-->
 			</div>
 		</div>
 		<div class="profile-image" use:addSlickScrollOffset>
@@ -73,7 +73,7 @@
 						{ property: "width", value: "100%"},
 						{ property: "height", value: "100%"}
 					]
-				}} alt="Musab's Profile" class="profile-pic">
+				}} alt="Evgenia's Profile" class="profile-pic">
 			{/await}
 		</div>
 	{/await}
@@ -84,59 +84,63 @@
 		<ul class="list first">
 			<li class="list-title">
 				<div in:letterSlideIn={{ initDelay: 400 }}>
-					technical expertise
+					Направления художественной деятельности
 				</div>
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 550 }}>
-					Front-end
+					Иконопись
 				</div>
 				<div 
 					class="flex-item" 
 					in:maskSlideIn={{ delay: 600 }}>
-					<img src="assets/imgs/svg-icons/svelte.svg" alt="Svelte">
-					<img src="assets/imgs/svg-icons/react.svg" alt="React">
+<!--					<img src="assets/imgs/svg-icons/svelte.svg" alt="Svelte">-->
+<!--					<img src="assets/imgs/svg-icons/react.svg" alt="React">-->
 				</div>
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 650 }}>
-					Back-end
+					Пастель
 				</div>
 				<div class="flex-item" in:maskSlideIn={{ delay: 700 }}>
-					<img src="assets/imgs/svg-icons/nodejs.svg" alt="node js">
-					<img src="assets/imgs/svg-icons/php.svg" alt="php">
+<!--					<img src="assets/imgs/svg-icons/nodejs.svg" alt="node js">-->
+<!--					<img src="assets/imgs/svg-icons/php.svg" alt="php">-->
 				</div>
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 750 }}>
-					Dev-ops
+					Роспись храмов
 				</div>
 				<div class="flex-item" in:maskSlideIn={{ delay: 800 }}>
-					<img src="assets/imgs/svg-icons/firebase.svg" alt="Firebase">
-					<img src="assets/imgs/svg-icons/gcp.svg" alt="Google Cloud Platform">
+<!--					<img src="assets/imgs/svg-icons/firebase.svg" alt="Firebase">-->
+<!--					<img src="assets/imgs/svg-icons/gcp.svg" alt="Google Cloud Platform">-->
 				</div>
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 850 }}>
-					Mobile
+					Роспись мебели
 				</div>
 				<div class="flex-item" in:maskSlideIn={{ delay: 900 }}>
-					<img src="assets/imgs/svg-icons/flutter.svg" alt="flutter">
-					<img src="assets/imgs/svg-icons/android.svg" alt="native android">
-					<img src="assets/imgs/svg-icons/iOS.svg" alt="native ios">
+<!--					<img src="assets/imgs/svg-icons/flutter.svg" alt="flutter">-->
+<!--					<img src="assets/imgs/svg-icons/android.svg" alt="native android">-->
+<!--					<img src="assets/imgs/svg-icons/iOS.svg" alt="native ios">-->
 				</div>
 			</li>
 		</ul>
 		<ul class="list">
 			<li class="list-title">
 				<div in:letterSlideIn={{ initDelay: 400 }}>
-					awards
+					Награды и номинации
 				</div>
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 550 }}>
-					1x — Awwwards Honors
+					Лучшая икона 2020
 				</div>
+				<div in:letterSlideIn={{ initDelay: 550 }}>
+					Самый красивый орнамент 2021
+				</div>
+
 			</li>
 		</ul>
 	{/await}
@@ -232,7 +236,7 @@
 
 	@media only screen and (max-width: 950px)
 		.profile-image
-			display: none
+			display: block
 
 .horizontal-flex
 	display: flex
