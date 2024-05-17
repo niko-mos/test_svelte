@@ -5,7 +5,7 @@
 	import { letterSlideIn, maskSlideIn } from "$lib/animations";
 	import { loadImage, onScrolledIntoView } from "$lib/utils";
 
-	let section1Element: HTMLElement, section2Element: HTMLElement;
+	let section1Element: HTMLElement, section2Element: HTMLElement, section3Element: HTMLElement;
 	let profilePicContainer: HTMLElement;
 
 	// Promise which when resolved will trigger svelte animations
@@ -13,6 +13,9 @@
 	let sectionOnePromise = new Promise((resolve) => sectionOneResolve = resolve);
 	let sectionTwoResolve: (value?: any) => void;
 	let sectionTwoPromise = new Promise((resolve) => sectionTwoResolve = resolve);
+	let sectionThreeResolve: (value?: any) => void;
+	let sectionThreePromise = new Promise((resolve) => sectionThreeResolve = resolve);
+
 
 	onMount(async () => {
 		// Wait for page to load
@@ -27,6 +30,7 @@
 
 		onScrolledIntoView(section1Element, () => sectionOneResolve(true));
 		onScrolledIntoView(section2Element, () => sectionTwoResolve(true));
+		onScrolledIntoView(section3Element, () => sectionThreeResolve(true));
 	});
 
 	function titleIn(node: HTMLElement) {
@@ -52,16 +56,18 @@
 			</h1>
 			<div in:maskSlideIn={{ duration: 1200, reverse: true, delay: 150 }}>
 				<p class="paragraph">
-					Я специалист в области иконописи.
+					Я художник - специалист в области иконописи.
 				</p>
+
+
 			</div>
 			<div class="social-button-wrapper">
-<!--				<div in:maskSlideIn={{ delay: 400, reverse: true }}>-->
-<!--					<span class="button"><a href="mailto:musabhassan04@gmail.com" target="_blank" class="clickable sublink link">Email Me</a></span>-->
-<!--				</div>-->
-<!--				<div in:maskSlideIn={{ delay: 700, reverse: true }}>-->
-<!--					<span class="button"><a href="https://github.com/Musab-Hassan" target="_blank" class="clickable sublink link">Github</a></span>-->
-<!--				</div>-->
+				<div in:maskSlideIn={{ delay: 400, reverse: true }}>
+					<span class="button"><a href="mailto:zhenya2201art@gmail.com" target="_blank" class="clickable sublink link">Email Me</a></span>
+				</div>
+				<div in:maskSlideIn={{ delay: 700, reverse: true }}>
+					<span class="button"><a href="https://www.instagram.com/art.rodina.e" target="_blank" class="clickable sublink link">Instagram</a></span>
+				</div>
 			</div>
 		</div>
 		<div class="profile-image" use:addSlickScrollOffset>
@@ -130,19 +136,76 @@
 		<ul class="list">
 			<li class="list-title">
 				<div in:letterSlideIn={{ initDelay: 400 }}>
-					Награды и номинации
+					Участие в выставках
 				</div>
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 550 }}>
-					Лучшая икона 2020
+					МСХ «Монументальное искусство в церкви» 2022, 2023гг, Москва
 				</div>
 				<div in:letterSlideIn={{ initDelay: 550 }}>
-					Самый красивый орнамент 2021
+					«Окно в горний мир», 2024, Главный храм Вооруженных сил РФ, Московская область
 				</div>
 
 			</li>
 		</ul>
+	{/await}
+</div>
+
+<div class="horizontal-flex" bind:this={section3Element}>
+	{#await sectionThreePromise then _}
+
+		<div class="container" in:letterSlideIn={{ initDelay: 400 }}>
+			<h1>Биография</h1>
+
+			<div class="section">
+				<h2>Образование</h2>
+				<p>Училась в МГОУ факультет ИЗО и НР по специальности иконопись (2002-2007 гг).</p>
+			</div>
+
+			<div class="section">
+				<h2>Профессиональная деятельность</h2>
+				<p>Иконописец, монументалист. Работаю 15 лет в различных стилях канонического письма.</p>
+				<p>Участвовала в монументальных росписях, написании иконостасов, реконструкциях и благоукрашении многих храмов России, ближнего зарубежья и Европы.</p>
+
+				<h3>Участие в росписях</h3>
+				<ul>
+					<li>Храм Знамения на Шереметьевом дворе (г. Москва)</li>
+					<li>Храм Спиридона Тримифунтского (г. Самара)</li>
+					<li>Храм Дмитрия Донского и Ефросинии Московской Тульского Кремля</li>
+					<li>Храм Троицы Живоначальной на Шаболовской (г. Москва)</li>
+					<li>Храм Благовещения Пресвятой Богородицы (Испания, Барселона)</li>
+					<li>Храм Крестовоздвижения (Алматы, Казахстан)</li>
+				</ul>
+
+				<h3>Участие в иконостасах</h3>
+				<ul>
+					<li>Домовая церковь в с. Михалёво (Московская обл.)</li>
+					<li>Церковь преподобного Сергия Радонежского на Куликовом поле</li>
+					<li>Реконструкция икон храма Знамения в усадьбе Дубровицы (Московская обл.)</li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h2>Проектная работа</h2>
+				<p>Работая с художественными творческими мастерскими, имею опыт разработки проектов росписей, отрисовки орнаментов, эскизов композиций - от калек до исполнения на стене, ведение бригадных работ на объектах.</p>
+			</div>
+
+			<div class="section">
+				<h2>Выставки</h2>
+				<ul>
+					<li>Участник выставки МСХ «Монументальное искусство в церкви» 2022 и 2023 гг. в Москве</li>
+					<li>Участник выставки «Окно в горний мир» 2024 г. в Главном храме Вооруженных сил РФ</li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h2>Дополнительная информация</h2>
+				<p>Так же работаю лично вне художественных коллективов. В основном это иконы.</p>
+				<p>Являюсь членом Национального Союза Пастелистов с 2021 г. Регулярно участвую в выставках.</p>
+			</div>
+		</div>
+
 	{/await}
 </div>
 
@@ -252,6 +315,7 @@
 		padding: 0 8vw
 
 	.list
+		width: 45%
 		list-style-type: none
 		text-align: left
 

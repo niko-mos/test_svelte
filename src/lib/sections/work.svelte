@@ -32,7 +32,7 @@
 	const inViewPromise: Promise<boolean> = new Promise((resolve) => {
 		inViewResolve = resolve;
 	});
-	const imageFiles: string[] = ["1.jpg", "2.jpg", "3.jpg"];
+	const imageFiles: string[] = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"];
 
 	// Slider calculations and rendering
 	class WorkSlider {
@@ -163,12 +163,12 @@
 					<li use:workImageIntro={{ promise: inViewPromise, delay: i*30 }}>
 						<div class="list-item clickable passive" 
 							class:ambient="{ currentActive !== i && currentActive >= 0 }" 
-							class:active="{ currentActive === i }" 
+							class:active="{ currentActive === i }"
 							bind:this={ workItems[i] }>
 
 							<div class="img-wrapper">
 								{#await loadImage(`assets/imgs/work-back/${item.id}/cover.jpg`) then src}
-									<img bind:this={images[i]} src="{src}" on:dragstart|preventDefault draggable="false" alt="{item.title} Background">
+									<img class="cover-image" bind:this={images[i]} src="{src}" on:dragstart|preventDefault draggable="false" alt="{item.title} Background">
 								{/await}
 							</div>
 							{#await inViewPromise then _}
@@ -236,9 +236,9 @@
 						</div>
 					</div>
 
-					<div class="image-grid">
+					<div class="image-grid" in:fade={{ duration: 400 }} out:fade={{ duration: 400 }}>
 						{#each imageFiles as image}
-							<img src={`data/${image}`} alt="Image" class="grid-image" />
+							<img src={`assets/imgs/work-back/${data[currentActive].id}/${image}`} alt="Image" class="grid-image" />
 						{/each}
 					</div>
 
@@ -335,14 +335,38 @@
 
 	.image-grid
 		display: grid
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+		//grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+		grid-template-columns: repeat(2, 1fr)
 		grid-gap: 10px
 		max-width: 100%
 		overflow: auto
+		transition: width 0.7s cubic-bezier(0.25, 1, 0.5, 1), height 0.7s cubic-bezier(0.25, 1, 0.5, 1), margin 0.8s cubic-bezier(0.25, 1, 0.5, 1)
+
+		*
+			transition: opacity 0.3s ease
+			-webkit-transition: opacity 0.3s ease
 
 		.grid-image
 			max-width: 100%
 			height: auto
+			transition: width 0.7s cubic-bezier(0.25, 1, 0.5, 1), height 0.7s cubic-bezier(0.25, 1, 0.5, 1), margin 0.8s cubic-bezier(0.25, 1, 0.5, 1)
+
+
+
+	//.image-grid
+	//	display: grid
+	//	grid-template-columns: repeat(3, 1fr)
+	//	grid-gap: 10px
+	//	max-width: 100%
+	//	height: 100vh
+	//	overflow: auto
+	//	padding: 10px
+	//	background-color: #eee
+	//
+	//	.grid-image
+	//		width: 100%
+	//		height: 100%
+	//		object-fit: cover
 
 	.details-container
 		position: absolute
@@ -556,13 +580,14 @@
 				-webkit-transition: opacity 0.3s ease
 
 			&.active
-				height: 60vh
-				width: 50vw
+				height: 0vh
+				width: 0vw
 				margin-right: 16vw
 				margin-left: 10vw
 
 				.img-wrapper
 					width: 100%
+					opacity: 0
 
 			&.ambient
 				height: 45vh
@@ -578,7 +603,7 @@
 				width: 85%
 				margin-right: 15%
 				box-shadow: 3px 9px 18px rgba(0, 0, 0, 0.2)
-				
+
 				img
 					height: 110%
 					width: 110%
@@ -589,6 +614,7 @@
 					transform: translate(-50%, -50%)
 					-webkit-transform: translate(-50%, -50%)
 					opacity: 0.5
+
 
 			.text-top-wrapper
 				position: absolute

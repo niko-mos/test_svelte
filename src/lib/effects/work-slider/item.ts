@@ -42,10 +42,11 @@ export class SliderImageMesh extends ImageMesh {
         this.element.parentElement!.style.visibility = "hidden"; // Hide original image element
     }
 
-    render(): void {
-        super.render();
-
-        this.uniforms.uOffset!.value.set(this.speed * -0.0003, Math.abs(this.speed * 0.00005)); // Warping and Distortion effect
-        this.uniforms.uTime!.value = this.clock.getElapsedTime() * 0.8;
-    }
+    // effects for work item pictures (trembling effect)
+    // render(): void {
+    //     super.render();
+    //
+    //     this.uniforms.uOffset!.value.set(this.speed * -0.0003, Math.abs(this.speed * 0.00005)); // Warping and Distortion effect
+    //     this.uniforms.uTime!.value = this.clock.getElapsedTime() * 0.8;
+    // }
 }
