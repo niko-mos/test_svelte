@@ -3,8 +3,8 @@
         "id": "church",
         "title": "Роспись храмов",
         "details": {
-            "description": "Нарисовала руки ноги хвост",
-            "summary": "Красивый храм"
+            "description": "",
+            "summary": "Общий план, средний план, эскиз"
         },
         "date": "April 2022",
         "roles": [
@@ -39,10 +39,10 @@
     },
     {
         "id": "pastel",
-        "title": "Графика в сухой пастели",
+        "title": "Пастель",
         "details": {
             "description": "dry pastel",
-            "summary": "pastel"
+            "summary": "Графика в технике сухой пастели"
         },
         "date": "May 2021",
         "roles": [

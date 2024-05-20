@@ -85,78 +85,78 @@
 	{/await}
 </div>
 
+<!--<div class="horizontal-flex" bind:this={section2Element}>-->
+<!--	{#await sectionTwoPromise then _}-->
+<!--		<ul class="list first">-->
+<!--			<li class="list-title">-->
+<!--				<div in:letterSlideIn={{ initDelay: 400 }}>-->
+<!--					Направления художественной деятельности-->
+<!--				</div>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<div in:letterSlideIn={{ initDelay: 550 }}>-->
+<!--					Иконопись-->
+<!--				</div>-->
+<!--				<div -->
+<!--					class="flex-item" -->
+<!--					in:maskSlideIn={{ delay: 600 }}>-->
+<!--&lt;!&ndash;					<img src="assets/imgs/svg-icons/svelte.svg" alt="Svelte">&ndash;&gt;-->
+<!--&lt;!&ndash;					<img src="assets/imgs/svg-icons/react.svg" alt="React">&ndash;&gt;-->
+<!--				</div>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<div in:letterSlideIn={{ initDelay: 650 }}>-->
+<!--					Пастель-->
+<!--				</div>-->
+<!--				<div class="flex-item" in:maskSlideIn={{ delay: 700 }}>-->
+<!--&lt;!&ndash;					<img src="assets/imgs/svg-icons/nodejs.svg" alt="node js">&ndash;&gt;-->
+<!--&lt;!&ndash;					<img src="assets/imgs/svg-icons/php.svg" alt="php">&ndash;&gt;-->
+<!--				</div>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<div in:letterSlideIn={{ initDelay: 750 }}>-->
+<!--					Роспись храмов-->
+<!--				</div>-->
+<!--				<div class="flex-item" in:maskSlideIn={{ delay: 800 }}>-->
+<!--&lt;!&ndash;					<img src="assets/imgs/svg-icons/firebase.svg" alt="Firebase">&ndash;&gt;-->
+<!--&lt;!&ndash;					<img src="assets/imgs/svg-icons/gcp.svg" alt="Google Cloud Platform">&ndash;&gt;-->
+<!--				</div>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<div in:letterSlideIn={{ initDelay: 850 }}>-->
+<!--					Роспись мебели-->
+<!--				</div>-->
+<!--				<div class="flex-item" in:maskSlideIn={{ delay: 900 }}>-->
+<!--&lt;!&ndash;					<img src="assets/imgs/svg-icons/flutter.svg" alt="flutter">&ndash;&gt;-->
+<!--&lt;!&ndash;					<img src="assets/imgs/svg-icons/android.svg" alt="native android">&ndash;&gt;-->
+<!--&lt;!&ndash;					<img src="assets/imgs/svg-icons/iOS.svg" alt="native ios">&ndash;&gt;-->
+<!--				</div>-->
+<!--			</li>-->
+<!--		</ul>-->
+<!--		<ul class="list">-->
+<!--			<li class="list-title">-->
+<!--				<div in:letterSlideIn={{ initDelay: 400 }}>-->
+<!--					Участие в выставках-->
+<!--				</div>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<div in:letterSlideIn={{ initDelay: 550 }}>-->
+<!--					МСХ «Монументальное искусство в церкви» 2022, 2023гг, Москва-->
+<!--				</div>-->
+<!--				<div in:letterSlideIn={{ initDelay: 550 }}>-->
+<!--					«Окно в горний мир», 2024, Главный храм Вооруженных сил РФ, Московская область-->
+<!--				</div>-->
+
+<!--			</li>-->
+<!--		</ul>-->
+<!--	{/await}-->
+<!--</div>-->
+
 <div class="horizontal-flex" bind:this={section2Element}>
 	{#await sectionTwoPromise then _}
-		<ul class="list first">
-			<li class="list-title">
-				<div in:letterSlideIn={{ initDelay: 400 }}>
-					Направления художественной деятельности
-				</div>
-			</li>
-			<li>
-				<div in:letterSlideIn={{ initDelay: 550 }}>
-					Иконопись
-				</div>
-				<div 
-					class="flex-item" 
-					in:maskSlideIn={{ delay: 600 }}>
-<!--					<img src="assets/imgs/svg-icons/svelte.svg" alt="Svelte">-->
-<!--					<img src="assets/imgs/svg-icons/react.svg" alt="React">-->
-				</div>
-			</li>
-			<li>
-				<div in:letterSlideIn={{ initDelay: 650 }}>
-					Пастель
-				</div>
-				<div class="flex-item" in:maskSlideIn={{ delay: 700 }}>
-<!--					<img src="assets/imgs/svg-icons/nodejs.svg" alt="node js">-->
-<!--					<img src="assets/imgs/svg-icons/php.svg" alt="php">-->
-				</div>
-			</li>
-			<li>
-				<div in:letterSlideIn={{ initDelay: 750 }}>
-					Роспись храмов
-				</div>
-				<div class="flex-item" in:maskSlideIn={{ delay: 800 }}>
-<!--					<img src="assets/imgs/svg-icons/firebase.svg" alt="Firebase">-->
-<!--					<img src="assets/imgs/svg-icons/gcp.svg" alt="Google Cloud Platform">-->
-				</div>
-			</li>
-			<li>
-				<div in:letterSlideIn={{ initDelay: 850 }}>
-					Роспись мебели
-				</div>
-				<div class="flex-item" in:maskSlideIn={{ delay: 900 }}>
-<!--					<img src="assets/imgs/svg-icons/flutter.svg" alt="flutter">-->
-<!--					<img src="assets/imgs/svg-icons/android.svg" alt="native android">-->
-<!--					<img src="assets/imgs/svg-icons/iOS.svg" alt="native ios">-->
-				</div>
-			</li>
-		</ul>
-		<ul class="list">
-			<li class="list-title">
-				<div in:letterSlideIn={{ initDelay: 400 }}>
-					Участие в выставках
-				</div>
-			</li>
-			<li>
-				<div in:letterSlideIn={{ initDelay: 550 }}>
-					МСХ «Монументальное искусство в церкви» 2022, 2023гг, Москва
-				</div>
-				<div in:letterSlideIn={{ initDelay: 550 }}>
-					«Окно в горний мир», 2024, Главный храм Вооруженных сил РФ, Московская область
-				</div>
-
-			</li>
-		</ul>
-	{/await}
-</div>
-
-<div class="horizontal-flex" bind:this={section3Element}>
-	{#await sectionThreePromise then _}
 
 		<div class="container" in:letterSlideIn={{ initDelay: 400 }}>
-			<h1>Биография</h1>
+<!--			<h1>Биография</h1>-->
 
 			<div class="section">
 				<h2>Образование</h2>
@@ -214,6 +214,11 @@
 
 @import "../consts.sass"
 @include textStyles()
+
+.container
+	font-size: 1.6em
+	animation: letterSlideIn 1s ease-in-out
+
 
 #content-container.about
 	display: flex

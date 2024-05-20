@@ -350,6 +350,8 @@
 			max-width: 100%
 			height: auto
 			transition: width 0.7s cubic-bezier(0.25, 1, 0.5, 1), height 0.7s cubic-bezier(0.25, 1, 0.5, 1), margin 0.8s cubic-bezier(0.25, 1, 0.5, 1)
+			justify-self: center
+			align-self: center
 
 
 
@@ -372,13 +374,13 @@
 		position: absolute
 		left: 0
 		top: 0
-		height: 100%
+		height: 150%
 		width: 100%
 		display: flex
 		flex-direction: row
 		justify-content: space-between
 		box-sizing: border-box
-		padding: 0 14vw
+		padding: 0 20vw
 
 		.wrapper
 			text-align: left
