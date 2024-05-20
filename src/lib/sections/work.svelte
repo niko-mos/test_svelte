@@ -336,7 +336,7 @@
 	.image-grid
 		display: grid
 		//grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
-		grid-template-columns: repeat(2, 1fr)
+		grid-template-columns: repeat(2, minmax(200px,1fr))
 		grid-gap: 10px
 		max-width: 100%
 		overflow: auto
@@ -352,6 +352,10 @@
 			transition: width 0.7s cubic-bezier(0.25, 1, 0.5, 1), height 0.7s cubic-bezier(0.25, 1, 0.5, 1), margin 0.8s cubic-bezier(0.25, 1, 0.5, 1)
 			justify-self: center
 			align-self: center
+
+	@media only screen and (max-width: 750px)
+		.image-grid
+			grid-template-columns: repeat(1, minmax(200px, 1fr))
 
 
 
