@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2d372b37-6c3d-4d62-a2b6-7d250d1c40b9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/sections/work.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/sections/work.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/nav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/nav.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/sections/about.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/sections/about.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/data/work-data.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/work-data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,7 @@
       <workItem from="1715444913660" duration="984000" />
       <workItem from="1715534745121" duration="5191000" />
       <workItem from="1715710405358" duration="1142000" />
-      <workItem from="1715944525222" duration="7787000" />
+      <workItem from="1715944525222" duration="11049000" />
     </task>
     <servers />
   </component>

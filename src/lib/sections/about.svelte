@@ -68,6 +68,9 @@
 				<div in:maskSlideIn={{ delay: 700, reverse: true }}>
 					<span class="button"><a href="https://www.instagram.com/art.rodina.e" target="_blank" class="clickable sublink link">Instagram</a></span>
 				</div>
+				<div in:maskSlideIn={{ delay: 700, reverse: true }}>
+					<span class="button"><a href="https://t.me/rodina_albom" target="_blank" class="clickable sublink link">Telegram</a></span>
+				</div>
 			</div>
 		</div>
 		<div class="profile-image" use:addSlickScrollOffset>
@@ -216,7 +219,7 @@
 @include textStyles()
 
 .container
-	font-size: 1.6em
+	font-size: 1.2em
 	animation: letterSlideIn 1s ease-in-out
 
 

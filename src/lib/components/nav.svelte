@@ -96,12 +96,12 @@
 								Обо мне
 							</button>
 						</li>
-						<li class="mobile">
-							<a href="mailto:zhenya2201art@gmail.com" target="_blank" in:mobileTransitionSwitcher={{ delay: 350 }}>Email</a>
-						</li>
-						<li use:introAnimation={{ delay: 1300 }}>
-							<a href="https://t.me/rodina_albom" target="_blank" in:mobileTransitionSwitcher={{ delay: 400 }}>Telegram</a>
-						</li>
+<!--						<li class="mobile">-->
+<!--							<a href="mailto:zhenya2201art@gmail.com" target="_blank" in:mobileTransitionSwitcher={{ delay: 350 }}>Email</a>-->
+<!--						</li>-->
+<!--						<li use:introAnimation={{ delay: 1300 }}>-->
+<!--							<a href="https://t.me/rodina_albom" target="_blank" in:mobileTransitionSwitcher={{ delay: 400 }}>Telegram</a>-->
+<!--						</li>-->
 					{/key}
 				</ul>
 			</div>
