@@ -4,7 +4,7 @@
         "title": "Роспись храмов",
         "details": {
             "description": "",
-            "summary": "Общий план, средний план, эскиз"
+            "summary": ""
         },
         "date": "April 2022",
         "roles": [
@@ -41,8 +41,8 @@
         "id": "pastel",
         "title": "Пастель",
         "details": {
-            "description": "dry pastel",
-            "summary": "Графика в технике сухой пастели"
+            "description": "",
+            "summary": ""
         },
         "date": "May 2021",
         "roles": [
