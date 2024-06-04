@@ -33,6 +33,7 @@
 		inViewResolve = resolve;
 	});
 	const imageFiles: string[] = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"];
+	const iconFiles: string[] = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"];
 
 	// Slider calculations and rendering
 	class WorkSlider {
@@ -236,11 +237,21 @@
 						</div>
 					</div>
 
+					{#if data[currentActive].id=="iconopis"}
 					<div class="image-grid" in:fade={{ duration: 400 }} out:fade={{ duration: 400 }}>
-						{#each imageFiles as image}
+						{#each iconFiles as image}
 							<img src={`assets/imgs/work-back/${data[currentActive].id}/${image}`} alt="Image" class="grid-image" />
 						{/each}
 					</div>
+						{:else}
+
+						<div class="image-grid" in:fade={{ duration: 400 }} out:fade={{ duration: 400 }}>
+							{#each imageFiles as image}
+								<img src={`assets/imgs/work-back/${data[currentActive].id}/${image}`} alt="Image" class="grid-image" />
+							{/each}
+						</div>
+
+					{/if}
 
 
 					<div class="mid-align">

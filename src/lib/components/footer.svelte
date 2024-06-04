@@ -83,16 +83,16 @@
         </div>
 
         <div class="status-wrapper">
-                {#if siteData.availablity_date === ""}
+                <!--{#if siteData.availablity_date === ""}-->
                     <p class="large-text" bind:this={statusElement}>
                         Принимаю заказы на роспись, написание икон и прочие работы.
 <!--                        , <br>.-->
                     </p>
-                {:else}
-                    <p class="large-text" bind:this={statusElement}>
-                        Принимаю заказы на роспись, написание икон и прочие работы с <br> {siteData.availablity_date}.
-                    </p>
-                {/if}
+                <!--{:else}-->
+                <!--    <p class="large-text" bind:this={statusElement}>-->
+                <!--        Принимаю заказы на роспись, написание икон и прочие работы с <br> {siteData.availablity_date}.-->
+                <!--    </p>-->
+                <!--{/if}-->
             <a class="button large-text" bind:this={fullEmailLinkElement} href="mailto:zhenya2201art@gmail.com" target="_blank">zhenya2201art@gmail.com</a>
         </div>
         
