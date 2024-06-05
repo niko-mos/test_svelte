@@ -32,7 +32,7 @@
 	const inViewPromise: Promise<boolean> = new Promise((resolve) => {
 		inViewResolve = resolve;
 	});
-	const imageFiles: string[] = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"];
+	const imageFiles: string[] = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg"];
 	const iconFiles: string[] = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"];
 
 	// Slider calculations and rendering
@@ -359,7 +359,7 @@
 
 		.grid-image
 			max-width: 100%
-			height: auto
+			height: 100%
 			transition: width 0.7s cubic-bezier(0.25, 1, 0.5, 1), height 0.7s cubic-bezier(0.25, 1, 0.5, 1), margin 0.8s cubic-bezier(0.25, 1, 0.5, 1)
 			justify-self: center
 			align-self: center
@@ -614,7 +614,7 @@
 
 			.img-wrapper
 				overflow: hidden
-				height: 100%
+				height: 150%
 				z-index: 1
 				position: relative
 				width: 85%
